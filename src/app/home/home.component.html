@@ -1,0 +1,16 @@
+<h1>book</h1>
+
+<button (click)="firstClick()">Click me</button>
+
+<button (click)="getBook()">show book</button>
+
+<button (click)="deleteBook()">delete book</button>
+
+<ul *ngIf = "books">
+    <li *ngFor = "let book of books">
+        <h3>{{book | json}}</h3>
+
+
+    </li>
+
+</ul>
